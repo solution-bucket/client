@@ -1,34 +1,29 @@
 import axios from 'axios';
 import { useContext, useEffect, useState } from 'react';
-import {Row, Col, Card,Avatar, Typography, Divider, Button} from 'antd';
+import {Row, Col,List, Modal, Card,Avatar, Typography, Divider, Button} from 'antd';
 import Head from 'next/head';
 import {CloseOutlined } from '@ant-design/icons';
 import { ThemeContext } from '../../context/theme';
 import dayjs from 'dayjs';
 import Link from 'next/link';
 import {toast} from 'react-hot-toast';
-import { List, Modal,Button}  from 'antd';
 import CommentForm from '../../components/comments/CommentForm';
 import { ShareSocial }  from "react-share-social";
 var relativeTime = require('dayjs/plugin/relativeTime');
 import useCategory  from '../../hooks/useCategory';
 import useLatestPosts  from '../../hooks/useLatestPosts';
-import {ArrowRightOutlined} from '@ant-design/icons';
 dayjs.extend(relativeTime);
-import {TagsOutlined,EnvironmentOutlined,HistoryOutlined, UserOutlined, ShareAltOutlined,RotateLeftOutlined} from '@ant-design/icons';
+import {HistoryOutlined, UserOutlined, ShareAltOutlined} from '@ant-design/icons';
 const {Meta} = Card;
 const  {Title} = Typography;
 import SeedMessage  from './SeedMessage';
 import { AiOutlineShareAlt } from "react-icons/ai";
-import { FiCornerUpLeft } from "react-icons/fi";
 
 export const SinglePost =  ({post, postComments})=> {
   const [visible, setVisible] = useState(false);  // visibility state
+  const [shareOpen, setShareOpen] = useState(false);  // visibility state
   const safety_measure = [
-    {
-      id: 1,
-      data: 'To become a computer programer/software developer you need to put in the work. There is no fool-proof prescription to it .'
-    },
+  
     
     {
       id: 2,
@@ -40,9 +35,12 @@ export const SinglePost =  ({post, postComments})=> {
     },
     {
       id: 4,
-      data: "Copy the code in you IDE (Integrated Development Enviroment) 🖥️."
+      data: "Copy this  code and paste it into your IDE (Integrated Development Enviroment) try changing some lines to get comfortable with the materials. 🖥️."
     },
-   
+    {
+      id: 1,
+      data: 'To become a computer programer/software developer you need to put in the work. There is no fool-proof prescription to it 🤣🤣🤣🤣🤣 .'
+    },
   ]
 const [theme, setTheme] = useContext(ThemeContext);
 //comments
@@ -90,7 +88,7 @@ const handleSubmit = async()=> {
               {/** share social link */}
               <Button
            
-           onClick={() => setShare(true)}
+           onClick={() => setShareOpen(true)}
            className="textCenter"
            type="secondary"
            shape="round"
@@ -100,18 +98,17 @@ const handleSubmit = async()=> {
          Share
          </Button>
               <Modal
-           width={750}
+           width={950}
             title="Share on:."
             centered
-            open={visible}
-            onCancel={() => setVisible(false)}
+            open={shareOpen}
+            onCancel={() => setShareOpen(false)}
             footer={null}
-            style={{height:'800px', overflow:"auto", color:'brown', backgroundColor:'#fff'}}
           >
  <span style={{display:'flex', flexDirection:'row'}}>
  <AiOutlineShareAlt style={{ marginTop:'17%', fontSize:'2rem'}}/> <p style={{ marginTop:'17%', fontSize:'1rem'}}>SHARE:</p>
  <ShareSocial  url={process.browser && window.location.href} 
-        socialTypes={['facebook','twitter','reddit','linkedin','email']}
+        socialTypes={['facebook','twitter','whatsapp','linkedin','email']}
         onSocialButtonClicked={ data => console.log(data)} 
         style={{
       height:'20px',
@@ -132,7 +129,7 @@ const handleSubmit = async()=> {
               </div>
                
              
-                     <Button style={{ backgroundColor:'#fff', padding:'8px', textAlign:'center',alignItems:'center',borderRadius:'20px',color:'blue', margin:'10px '}} onClick={()=> setShowMore(!showMore)}>{showMore ? "show less" : "show more"}</Button>
+                     <Button style={{ backgroundColor:'#fff', padding:'8px', textAlign:'center',alignItems:'center',borderRadius:'20px',color:'blue', margin:'10px '}} onClick={()=> setShowMore(!showMore)}>{showMore ? "Read Less..." : "Reaad More..."}</Button>
                     
               <div className='payment_plan'>
                 <div>

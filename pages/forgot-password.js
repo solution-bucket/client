@@ -1,6 +1,6 @@
-import { useState, useEffect, useContext } from "react";
-import { Form, Input, Button, Checkbox } from "antd";
-import { MailOutlined, LockOutlined, UserOutlined } from "@ant-design/icons";
+import { useState} from "react";
+import { Form, Input, Button} from "antd";
+import { MailOutlined, LockOutlined} from "@ant-design/icons";
 import { Row, Col, Typography } from "antd";
 import toast from "react-hot-toast";
 import { useRouter } from "next/router";
@@ -22,12 +22,11 @@ const ForgotPassword = () => {
       setLoading(true);
 
       const { data } = await axios.post("/forgot-password", values);
-      console.log(data);
-      if (data.error) {
-        toast.error(data.error);
+      if (data?.error) {
+        toast.error(data?.error);
         setLoading(false);
       } else {
-        toast.success("Check your email. The request code has been sent.");
+        toast.success("Check your email. The reset code has been sent.");
         setVisible(true);
         setLoading(false);
       }
@@ -43,9 +42,8 @@ const ForgotPassword = () => {
       setLoading(true);
 
       const { data } = await axios.post("/reset-password", values);
-      console.log(data);
-      if (data.error) {
-        toast.error(data.error);
+      if (data?.error) {
+        toast.error(data?.error);
         setLoading(false);
       } else {
         toast.success(
@@ -134,7 +132,7 @@ const ForgotPassword = () => {
             <Button type="primary" htmlType="submit" loading={loading}>
               Submit
             </Button>
-            <br /> Or{" "}
+            <br /> OR 👉{" "}
             <Link href="/signin">
               <a>Login</a>
             </Link>

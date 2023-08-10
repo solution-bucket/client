@@ -1,37 +1,25 @@
-import { AuthContext } from "../context/auth";
 import FullWidthImage  from  "../components/pages/FullWidthImage";
 import { useContext } from "react";
-import useNumbers  from '../hooks/useNumbers'
-import RenderProgres from '../components/posts/RenderProgress';
 import useLatestPosts from "../hooks/useLatestPosts";
 import useCategory from "../hooks/useCategory";
 import Head from 'next/head';
 import { Row, Col, Divider, Button } from "antd";
 import Link from "next/link";
-import { useEffect, useState } from "react";
-import ParallaxImage from "./ParallaxImage";
-import { ThunderboltFilled } from "@ant-design/icons";
-import axios from "axios";
 import useHome from '../hooks/useHome';
-import { AiOutlineShareAlt } from "react-icons/ai";
-import { FiCornerUpLeft } from "react-icons/fi";
 import dayjs from 'dayjs';
 
 var relativeTime = require('dayjs/plugin/relativeTime');
 dayjs.extend(relativeTime);
+
 import MainFooter from '../MainFooter'
 import {
-  TagsOutlined,
-  EnvironmentOutlined,
   HistoryOutlined, 
   UserOutlined, 
-  RotateLeftOutlined} from '@ant-design/icons';
+  } from '@ant-design/icons';
 
 
 function Home (){
-  const [auth, setAuth] = useContext(AuthContext);
-  const {user} = auth;
-  const {numbers} = useNumbers();
+
   const {latestposts} = useLatestPosts();
   const {categories, loading} = useCategory();
   const { 

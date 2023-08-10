@@ -1,22 +1,18 @@
-import AdminLayout from '../components/layout/AdminLayout';
-import { Col, Row ,Button, List, Input, Avatar, Badge, Space } from 'antd';
+import { Col, Row ,Button, List, Input, Avatar, Badge} from 'antd';
 import Link from 'next/link';
-import { PlusOutlined, SyncOutlined } from '@ant-design/icons';
+import {SyncOutlined } from '@ant-design/icons';
 import { useEffect, useState, useContext } from 'react';
 import axios from 'axios';
 import { useRouter } from 'next/router';
 import { AuthContext } from '../context/auth';
 import dayjs from 'dayjs';
-import { toast } from 'react-hot-toast';
-//var relativeTime = require('dayjs/plugin/relativeTime');
+
 var localizedFormat = require('dayjs/plugin/localizedFormat');
 dayjs.extend(localizedFormat);
 
 
 function Search () {
-  const [allCourses, setAllCourses] = useState([]);
-
-    const [auth, setAuth] = useContext(AuthContext);
+    const [allCourses, setAllCourses] = useState([]);
     const [keyword, setKeyword] = useState('');
     const [page, setPage] = useState(1);
     const [total, setTotal] = useState(0);
@@ -121,9 +117,7 @@ function Search () {
                 <Button loading={loading} style={{textAlign:'center'}} 
                 type='primary' onClick={()=> setPage(page + 1)}>Show more</Button>
              </Col>
-             {/* <Col>
-                <Button type='primary' onClick={()=> setPage(page -2)}>previous</Button>
-             </Col> */}
+          
              </Row> 
            )}
  

@@ -1,5 +1,3 @@
-import { SendOutlined } from "@ant-design/icons";
-import { Button } from "antd";
 import Typed from 'react-typed';
 
 const FullWidthImage =({

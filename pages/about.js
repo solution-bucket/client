@@ -1,17 +1,7 @@
 import React from 'react'
-import { FaFacebookF, FaTwitter, FaLinkedinIn } from "react-icons/fa";
-import { FiInstagram } from "react-icons/fi";
-import { Carousel } from 'antd';
-import { Button, Tooltip } from 'antd'
-import { CodeOutlined } from '@ant-design/icons';
+import { FaTwitter, FaLinkedinIn } from "react-icons/fa";
 import { Badge, Space, Switch } from 'antd';
-const contentStyle = {
-  height: '60px',
-  color: '#fff',
-  lineHeight: '60px',
-  textAlign: 'center',
-  background: '#364d79',
-};
+
 
 const About= () => {
   const Mailto = ({ email, subject = '', body = '', children }) => {
@@ -49,7 +39,7 @@ const About= () => {
       
     </div>
     🖐️ HI THERE. 😎 I'm  Ephraim Momoh Jr, a software developer based in Monrovia, Liberia with decades of experiences working with modern techologies,
-       My ultimate goal is to share knowledges and impacts the world using my tech backgrounds.
+       My ultimate goal is to share knowledges and impacts the world using my experiences and expertise.
        But I'm  also open to conversations around Entreprenuership, Social impact initiatives, Diversity and inclusion.
         
       <span style={{ display:'flex', flexDirection:"column", justifyContent:"space-between"}}>
@@ -60,7 +50,7 @@ const About= () => {
       <Badge count={show ? "C++" : "NEXT JS"} />
       <Badge
         className="site-badge-count-109"
-        count={show ? "HTML || CSS || JAVASCRIPT" : "MySQL|| SQL"}
+        count={show ? "HTML CSS JAVASCRIPT" : "MySQL|| SQL"}
         style={{
           backgroundColor: 'PURPLE',
         }}

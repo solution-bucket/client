@@ -19,6 +19,7 @@ import Link from "next/link";
 import { AuthContext } from "../context/auth";
 import { useRouter } from "next/router";
 import { toast } from "react-hot-toast";
+import { FaSignInAlt, FaSignature } from "react-icons/fa";
 
 const { SubMenu } = Menu;
 
@@ -108,7 +109,7 @@ const TopNav = () => {
       {/* <Clock/> */}
     {auth?.user === null &&
        (<>
-       <Menu.Item   style={{marginLeft: "auto"}} key="signup" icon={<UserAddOutlined />}>
+       <Menu.Item   style={{marginLeft: "auto"}} key="signup" icon={< FaSignature/>}>
              <Link href="/signup">
                <a>Sign Up</a>
              </Link>
@@ -116,7 +117,7 @@ const TopNav = () => {
 
            <Menu.Item
              key="signin"
-             icon={<UserAddOutlined />}
+             icon={<FaSignInAlt />}
            
            >
              <Link href="/signin">

@@ -52,12 +52,11 @@ const SignUp = () => {
   }
 
   return (
+    <div style={{ padding: "20px", marginTop:"11%" }}>
     <Row>
-      <Col span={12} offset={4} style={{ paddingTop: "10%" }}>
-        <div className="design-line-container">
-        <div  className="design-line"/><Title>SignUp</Title> <div  className="design-line"/>
-        </div>
-        <div className="signup-form">
+      <Col span={12} offset={6} style={{ paddingTop: "10%" }}>
+        <Title>Sign Up</Title>
+
         <Form onFinish={onFinish}>
           <Form.Item
             name="name"
@@ -69,9 +68,7 @@ const SignUp = () => {
             ]}
             hasFeedback
           >
-            <Input
-            className="input-form"
-            prefix={<UserOutlined />} placeholder="Name" />
+            <Input prefix={<UserOutlined />} placeholder="Name" />
           </Form.Item>
           <Form.Item
             name="email"
@@ -87,9 +84,7 @@ const SignUp = () => {
             ]}
             hasFeedback
           >
-            <Input
-          className="input-form"  
-          prefix={<MailOutlined />} placeholder="Email" />
+            <Input prefix={<MailOutlined />} placeholder="Email" />
           </Form.Item>
           <Form.Item
             name="password"
@@ -104,7 +99,6 @@ const SignUp = () => {
             hasFeedback
           >
             <Input.Password
-            className="input-form"
               prefix={<LockOutlined />}
               type="password"
               placeholder="Password"
@@ -135,25 +129,25 @@ const SignUp = () => {
               }),
             ]}
           >
-            <Input.Password className="input-form"
+            <Input.Password
               prefix={<LockOutlined />}
               placeholder="Confirm Password"
             />
           </Form.Item>
 
           <Form.Item>
-            <Button className="input-form-btn" type="primary" htmlType="submit" loading={loading}>
+            <Button size="large" style={{borderRadius:"20px"}} type="primary" htmlType="submit" loading={loading}>
               Sign Up
             </Button>
-           
+            <br /> Or{" "}
             <Link href="/signin">
-              <a className="signup-link">Login Now</a>
+              <a>Login!</a>
             </Link>
           </Form.Item>
         </Form>
-        </div>
       </Col>
     </Row>
+    </div>
   );
 };
 

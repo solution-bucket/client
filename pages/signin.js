@@ -1,7 +1,7 @@
 
 import { useState, useEffect, useContext } from "react";
-import { Row, Col, Typography, Form, Input, Button, Divider } from "antd";
-import { MailOutlined, LockOutlined, UserOutlined } from "@ant-design/icons";
+import { Row, Col, Typography, Form, Input, Button} from "antd";
+import { MailOutlined, LockOutlined } from "@ant-design/icons";
 import toast from "react-hot-toast";
 import {AuthContext} from "../context/auth";
 import { useRouter } from "next/router";
@@ -46,9 +46,9 @@ const SignIn = () => {
         if (data.user?.role === "Admin") {
          router.push("/admin");
         } else if (data.user?.role === "Author") {
-          router.push("/");
+          router.push("/author");
         } else {
-          router.push("/");
+          router.push("/subscriber");
         }
       }
     } catch (err) {
@@ -59,13 +59,11 @@ const SignIn = () => {
    };
 
   return (
+    <div style={{ padding: "20px", marginTop:"11%" }}>
+      
     <Row>
-      <Col span={12} offset={4} style={{ paddingTop: "10%" }}>
-      <div className="design-line-container">
-        <div  className="design-line"/><Title>SignIn</Title> <div  className="design-line"/>
-        </div>
-
-   <div className="signin-form">
+      <Col span={12} offset={6} style={{ paddingTop: "10%" }}>
+        <Title>Sign In</Title>
         <Form
        // form={form}
           initialValues={{
@@ -89,12 +87,10 @@ const SignIn = () => {
             ]}
             hasFeedback
           >
-            <Input
-            className="input-form"
-            prefix={<MailOutlined />} placeholder="Email" />
+            <Input prefix={<MailOutlined />} placeholder="Email" />
           </Form.Item>
           <Form.Item
-            name="password" 
+            name="password"
             rules={[
               {
                 required: true,
@@ -105,7 +101,7 @@ const SignIn = () => {
             ]}
             hasFeedback
           >
-            <Input.Password className="input-form"
+            <Input.Password
               prefix={<LockOutlined />}
               type="password"
               placeholder="Password"
@@ -119,18 +115,18 @@ const SignIn = () => {
           </Form.Item>
 
           <Form.Item>
-            <Button className="input-form-btn" type="primary" htmlType="submit" loading={loading}>
+            <Button type="primary" style={{borderRadius:"20px"}} htmlType="submit" loading={loading}>
               Sign In
             </Button>
-           
-            <Link href="/signup" >
-              <a className="signup-link">Register Now</a>
+            <br /> Or{" "}
+            <Link href="/signup">
+              <a>Register now!</a>
             </Link>
           </Form.Item>
         </Form>
-        </div>
       </Col>
     </Row>
+    </div>
   );
 };
 

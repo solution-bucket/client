@@ -6,7 +6,6 @@ import  { Toaster } from 'react-hot-toast';
 import {PostProvider} from '../context/post';
 import {MediaProvider} from '../context/media';
 import {SearchProvider} from '../context/search';
-import Head from 'next/head';
  import 'react-quill/dist/quill.snow.css';
  import 'react-quill/dist/quill.bubble.css';
  function MyApp({ Component, pageProps }) {

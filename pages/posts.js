@@ -43,7 +43,7 @@ const loadMore = async()=> {
  return <div style={{marginTop:'50px'}}>
            <Head>
               <title>Learn and Build Stuff with Ephraim</title>
-              <meta description="Is Mainly for students who wants to improve their programming Skill." />
+              <meta description="THis Platform Is Mainly for students who wants to improve their programming Skill." />
            </Head>
          <Row>
             {allPosts.map((post) => (
@@ -55,10 +55,10 @@ const loadMore = async()=> {
               <Avatar shape='square'
                style={{height:'200px'}}
                src={post?.featuredImage?.url || "images/default.jpg"}
-                alt={post.title} />
+                alt={post?.title} />
               }
               >
-              <Meta title={post.title} />
+              <Meta title={post?.title} />
               </Card>
              </Link>
            </Col>

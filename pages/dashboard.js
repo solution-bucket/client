@@ -1,8 +1,6 @@
 import axios from "axios";
 import {Row, Col, Button, Card, Avatar} from 'antd';
-import CourseCard from "../components/cards/CourseCard";
 import Link from 'next/link';
-import Clock from "../clock";
 const {Meta} = Card;
 import { useState, useEffect } from "react";
 const Dashboard = ({ courses }) => {
@@ -11,7 +9,6 @@ const Dashboard = ({ courses }) => {
   const [total, setTotal] = useState(0);
   const [page, setPage] = useState(1);
   const [loading, setLoading] = useState(false);
-  const [keyword, setKeyword] = useState('');
 
   useEffect(()=> {
        getTotal();

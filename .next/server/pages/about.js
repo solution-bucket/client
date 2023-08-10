@@ -1,211 +1,65 @@
 "use strict";
+/*
+ * ATTENTION: An "eval-source-map" devtool has been used.
+ * This devtool is neither made for production nor for readable output files.
+ * It uses "eval()" calls to create a separate source file with attached SourceMaps in the browser devtools.
+ * If you are trying to read the output file, select a different devtool (https://webpack.js.org/configuration/devtool/)
+ * or disable the default devtool with "devtool: false".
+ * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
+ */
 (() => {
 var exports = {};
-exports.id = 2521;
-exports.ids = [2521];
+exports.id = "pages/about";
+exports.ids = ["pages/about"];
 exports.modules = {
 
-/***/ 50414:
+/***/ "./pages/about.js":
+/*!************************!*\
+  !*** ./pages/about.js ***!
+  \************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
-/* harmony export */ });
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(20997);
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(16689);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var react_icons_fa__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(16290);
-/* harmony import */ var react_icons_fa__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(react_icons_fa__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var react_icons_fi__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(92750);
-/* harmony import */ var react_icons_fi__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(react_icons_fi__WEBPACK_IMPORTED_MODULE_3__);
-/* harmony import */ var antd__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(45725);
-/* harmony import */ var antd__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(antd__WEBPACK_IMPORTED_MODULE_4__);
-/* harmony import */ var _ant_design_icons__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(87066);
-/* harmony import */ var _ant_design_icons__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_ant_design_icons__WEBPACK_IMPORTED_MODULE_5__);
-
-
-
-
-
-
-
-
-const contentStyle = {
-    height: "60px",
-    color: "#fff",
-    lineHeight: "60px",
-    textAlign: "center",
-    background: "#364d79"
-};
-const About = ()=>{
-    const Mailto = ({ email , subject ="" , body ="" , children  })=>{
-        let params = subject || body ? "?" : "";
-        if (subject) params += `subject=${encodeURIComponent(subject)}`;
-        if (body) params += `${subject ? "&" : ""}body=${encodeURIComponent(body)}`;
-        return /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("a", {
-            href: `mailto:${email}${params}`,
-            children: children
-        });
-    };
-    const [show, setShow] = react__WEBPACK_IMPORTED_MODULE_1___default().useState(true);
-    react__WEBPACK_IMPORTED_MODULE_1___default().useEffect(()=>{
-        document.documentElement.scrollTop = document.documentElement.clientHeight;
-        document.documentElement.scrollLeft = document.documentElement.clientWidth;
-    }, []);
-    /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(antd__WEBPACK_IMPORTED_MODULE_4__.Space, {
-        direction: "vertical",
-        size: "middle",
-        style: {
-            width: "100%"
-        }
-    });
-    return /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.Fragment, {
-        children: [
-            /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
-                className: "developer_AboutContent",
-                children: /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
-                    className: "developerCont",
-                    children: [
-                        /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("img", {
-                            src: "/images/developer.jpg",
-                            className: "developerMain"
-                        }),
-                        /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("h3", {
-                            children: [
-                                /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {}),
-                                "\uD83D\uDD90️ HI THERE. \uD83D\uDE0E I'm  Ephraim Momoh Jr, a software developer based in Monrovia, Liberia with decades of experiences working with modern techologies, My ultimate goal is to share knowledges and impacts the world using my tech backgrounds. But I'm  also open to conversations around Entreprenuership, Social impact initiatives, Diversity and inclusion.",
-                                /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("span", {
-                                    style: {
-                                        display: "flex",
-                                        flexDirection: "column",
-                                        justifyContent: "space-between"
-                                    },
-                                    children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("span", {
-                                        style: {
-                                            display: "flex",
-                                            flexDirection: "column",
-                                            flexWrap: "wrap"
-                                        },
-                                        children: /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(antd__WEBPACK_IMPORTED_MODULE_4__.Space, {
-                                            children: [
-                                                /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(antd__WEBPACK_IMPORTED_MODULE_4__.Switch, {
-                                                    checked: show,
-                                                    onChange: ()=>setShow(!show)
-                                                }),
-                                                /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(antd__WEBPACK_IMPORTED_MODULE_4__.Badge, {
-                                                    count: show ? "REACT JS || JAVA " : "NODE JS",
-                                                    showZero: true,
-                                                    color: "green"
-                                                }),
-                                                /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(antd__WEBPACK_IMPORTED_MODULE_4__.Badge, {
-                                                    count: show ? "C++" : "NEXT JS"
-                                                }),
-                                                /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(antd__WEBPACK_IMPORTED_MODULE_4__.Badge, {
-                                                    className: "site-badge-count-109",
-                                                    count: show ? "HTML || CSS || JAVASCRIPT" : "MySQL|| SQL",
-                                                    style: {
-                                                        backgroundColor: "PURPLE"
-                                                    }
-                                                })
-                                            ]
-                                        })
-                                    })
-                                })
-                            ]
-                        }),
-                        /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
-                            children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(antd__WEBPACK_IMPORTED_MODULE_4__.Badge.Ribbon, {
-                                text: "Call: +231 888214521",
-                                color: "blue"
-                            })
-                        }),
-                        /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("span", {
-                            className: "socialLinks inline-flex lg:ml-auto lg:mt-0 mt-6 w-full justify-center md:justify-end md:w-auto",
-                            children: [
-                                /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("a", {
-                                    href: "https://twitter.com/momoh_ephraim?t=agtzTjSCx7B-KDxjQIjsTQ&s=09",
-                                    target: "_blank",
-                                    rel: "noopener noreferrer",
-                                    className: "ml-3 text-white text-xl hover:scale-125 ease-in-out duration-300",
-                                    children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(react_icons_fa__WEBPACK_IMPORTED_MODULE_2__.FaTwitter, {})
-                                }),
-                                /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("a", {
-                                    href: "https://www.linkedin.com/in/ephraim-momoh-jr-629b02267",
-                                    target: "_blank",
-                                    rel: "noopener noreferrer",
-                                    className: "ml-3 text-white text-xl hover:scale-125 ease-in-out duration-300",
-                                    children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(react_icons_fa__WEBPACK_IMPORTED_MODULE_2__.FaLinkedinIn, {})
-                                }),
-                                /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("a", {
-                                    className: "ml-3 text-white text-xl hover:scale-125 ease-in-out duration-300",
-                                    children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(Mailto, {
-                                        email: "ephraimmomoh54@gmail.com",
-                                        subject: "Hello & Welcome",
-                                        body: "Do you have any Questions for Me ?",
-                                        children: "✉️"
-                                    })
-                                })
-                            ]
-                        }),
-                        /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {})
-                    ]
-                })
-            }),
-            /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
-                className: "about_image",
-                children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("img", {
-                    src: "/images/Learn.gif"
-                })
-            })
-        ]
-    });
-};
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (About);
-
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react/jsx-dev-runtime */ \"react/jsx-dev-runtime\");\n/* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ \"react\");\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);\n/* harmony import */ var react_icons_fa__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react-icons/fa */ \"react-icons/fa\");\n/* harmony import */ var react_icons_fa__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(react_icons_fa__WEBPACK_IMPORTED_MODULE_2__);\n/* harmony import */ var antd__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! antd */ \"antd\");\n/* harmony import */ var antd__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(antd__WEBPACK_IMPORTED_MODULE_3__);\n\n\n\n\nconst About = ()=>{\n    const Mailto = ({ email , subject =\"\" , body =\"\" , children  })=>{\n        let params = subject || body ? \"?\" : \"\";\n        if (subject) params += `subject=${encodeURIComponent(subject)}`;\n        if (body) params += `${subject ? \"&\" : \"\"}body=${encodeURIComponent(body)}`;\n        return /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"a\", {\n            href: `mailto:${email}${params}`,\n            children: children\n        }, void 0, false, {\n            fileName: \"C:\\\\Users\\\\Ephraim\\\\Favorites\\\\Authentic_Seller\\\\client\\\\pages\\\\about.js\",\n            lineNumber: 12,\n            columnNumber: 12\n        }, undefined);\n    };\n    const [show, setShow] = react__WEBPACK_IMPORTED_MODULE_1___default().useState(true);\n    react__WEBPACK_IMPORTED_MODULE_1___default().useEffect(()=>{\n        document.documentElement.scrollTop = document.documentElement.clientHeight;\n        document.documentElement.scrollLeft = document.documentElement.clientWidth;\n    }, []);\n    /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(antd__WEBPACK_IMPORTED_MODULE_3__.Space, {\n        direction: \"vertical\",\n        size: \"middle\",\n        style: {\n            width: \"100%\"\n        }\n    }, void 0, false, {\n        fileName: \"C:\\\\Users\\\\Ephraim\\\\Favorites\\\\Authentic_Seller\\\\client\\\\pages\\\\about.js\",\n        lineNumber: 21,\n        columnNumber: 3\n    }, undefined);\n    return /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.Fragment, {\n        children: [\n            /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"div\", {\n                className: \"developer_AboutContent\",\n                children: /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"div\", {\n                    className: \"developerCont\",\n                    children: [\n                        /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"img\", {\n                            src: \"/images/developer.jpg\",\n                            className: \"developerMain\"\n                        }, void 0, false, {\n                            fileName: \"C:\\\\Users\\\\Ephraim\\\\Favorites\\\\Authentic_Seller\\\\client\\\\pages\\\\about.js\",\n                            lineNumber: 33,\n                            columnNumber: 7\n                        }, undefined),\n                        /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"h3\", {\n                            children: [\n                                /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"div\", {}, void 0, false, {\n                                    fileName: \"C:\\\\Users\\\\Ephraim\\\\Favorites\\\\Authentic_Seller\\\\client\\\\pages\\\\about.js\",\n                                    lineNumber: 37,\n                                    columnNumber: 7\n                                }, undefined),\n                                \"\\uD83D\\uDD90️ HI THERE. \\uD83D\\uDE0E I'm  Ephraim Momoh Jr, a software developer based in Monrovia, Liberia with decades of experiences working with modern techologies, My ultimate goal is to share knowledges and impacts the world using my experiences and expertise. But I'm  also open to conversations around Entreprenuership, Social impact initiatives, Diversity and inclusion.\",\n                                /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"span\", {\n                                    style: {\n                                        display: \"flex\",\n                                        flexDirection: \"column\",\n                                        justifyContent: \"space-between\"\n                                    },\n                                    children: /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"span\", {\n                                        style: {\n                                            display: \"flex\",\n                                            flexDirection: \"column\",\n                                            flexWrap: \"wrap\"\n                                        },\n                                        children: /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(antd__WEBPACK_IMPORTED_MODULE_3__.Space, {\n                                            children: [\n                                                /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(antd__WEBPACK_IMPORTED_MODULE_3__.Switch, {\n                                                    checked: show,\n                                                    onChange: ()=>setShow(!show)\n                                                }, void 0, false, {\n                                                    fileName: \"C:\\\\Users\\\\Ephraim\\\\Favorites\\\\Authentic_Seller\\\\client\\\\pages\\\\about.js\",\n                                                    lineNumber: 48,\n                                                    columnNumber: 7\n                                                }, undefined),\n                                                /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(antd__WEBPACK_IMPORTED_MODULE_3__.Badge, {\n                                                    count: show ? \"REACT JS || JAVA \" : \"NODE JS\",\n                                                    showZero: true,\n                                                    color: \"green\"\n                                                }, void 0, false, {\n                                                    fileName: \"C:\\\\Users\\\\Ephraim\\\\Favorites\\\\Authentic_Seller\\\\client\\\\pages\\\\about.js\",\n                                                    lineNumber: 49,\n                                                    columnNumber: 7\n                                                }, undefined),\n                                                /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(antd__WEBPACK_IMPORTED_MODULE_3__.Badge, {\n                                                    count: show ? \"C++\" : \"NEXT JS\"\n                                                }, void 0, false, {\n                                                    fileName: \"C:\\\\Users\\\\Ephraim\\\\Favorites\\\\Authentic_Seller\\\\client\\\\pages\\\\about.js\",\n                                                    lineNumber: 50,\n                                                    columnNumber: 7\n                                                }, undefined),\n                                                /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(antd__WEBPACK_IMPORTED_MODULE_3__.Badge, {\n                                                    className: \"site-badge-count-109\",\n                                                    count: show ? \"HTML CSS JAVASCRIPT\" : \"MySQL|| SQL\",\n                                                    style: {\n                                                        backgroundColor: \"PURPLE\"\n                                                    }\n                                                }, void 0, false, {\n                                                    fileName: \"C:\\\\Users\\\\Ephraim\\\\Favorites\\\\Authentic_Seller\\\\client\\\\pages\\\\about.js\",\n                                                    lineNumber: 51,\n                                                    columnNumber: 7\n                                                }, undefined)\n                                            ]\n                                        }, void 0, true, {\n                                            fileName: \"C:\\\\Users\\\\Ephraim\\\\Favorites\\\\Authentic_Seller\\\\client\\\\pages\\\\about.js\",\n                                            lineNumber: 47,\n                                            columnNumber: 6\n                                        }, undefined)\n                                    }, void 0, false, {\n                                        fileName: \"C:\\\\Users\\\\Ephraim\\\\Favorites\\\\Authentic_Seller\\\\client\\\\pages\\\\about.js\",\n                                        lineNumber: 46,\n                                        columnNumber: 6\n                                    }, undefined)\n                                }, void 0, false, {\n                                    fileName: \"C:\\\\Users\\\\Ephraim\\\\Favorites\\\\Authentic_Seller\\\\client\\\\pages\\\\about.js\",\n                                    lineNumber: 45,\n                                    columnNumber: 7\n                                }, undefined)\n                            ]\n                        }, void 0, true, {\n                            fileName: \"C:\\\\Users\\\\Ephraim\\\\Favorites\\\\Authentic_Seller\\\\client\\\\pages\\\\about.js\",\n                            lineNumber: 36,\n                            columnNumber: 7\n                        }, undefined),\n                        /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"div\", {\n                            children: /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(antd__WEBPACK_IMPORTED_MODULE_3__.Badge.Ribbon, {\n                                text: \"Call: +231 888214521\",\n                                color: \"blue\"\n                            }, void 0, false, {\n                                fileName: \"C:\\\\Users\\\\Ephraim\\\\Favorites\\\\Authentic_Seller\\\\client\\\\pages\\\\about.js\",\n                                lineNumber: 66,\n                                columnNumber: 9\n                            }, undefined)\n                        }, void 0, false, {\n                            fileName: \"C:\\\\Users\\\\Ephraim\\\\Favorites\\\\Authentic_Seller\\\\client\\\\pages\\\\about.js\",\n                            lineNumber: 65,\n                            columnNumber: 7\n                        }, undefined),\n                        /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"span\", {\n                            className: \"socialLinks inline-flex lg:ml-auto lg:mt-0 mt-6 w-full justify-center md:justify-end md:w-auto\",\n                            children: [\n                                /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"a\", {\n                                    href: \"https://twitter.com/momoh_ephraim?t=agtzTjSCx7B-KDxjQIjsTQ&s=09\",\n                                    target: \"_blank\",\n                                    rel: \"noopener noreferrer\",\n                                    className: \"ml-3 text-white text-xl hover:scale-125 ease-in-out duration-300\",\n                                    children: /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(react_icons_fa__WEBPACK_IMPORTED_MODULE_2__.FaTwitter, {}, void 0, false, {\n                                        fileName: \"C:\\\\Users\\\\Ephraim\\\\Favorites\\\\Authentic_Seller\\\\client\\\\pages\\\\about.js\",\n                                        lineNumber: 73,\n                                        columnNumber: 17\n                                    }, undefined)\n                                }, void 0, false, {\n                                    fileName: \"C:\\\\Users\\\\Ephraim\\\\Favorites\\\\Authentic_Seller\\\\client\\\\pages\\\\about.js\",\n                                    lineNumber: 71,\n                                    columnNumber: 15\n                                }, undefined),\n                                /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"a\", {\n                                    href: \"https://www.linkedin.com/in/ephraim-momoh-jr-629b02267\",\n                                    target: \"_blank\",\n                                    rel: \"noopener noreferrer\",\n                                    className: \"ml-3 text-white text-xl hover:scale-125 ease-in-out duration-300\",\n                                    children: /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(react_icons_fa__WEBPACK_IMPORTED_MODULE_2__.FaLinkedinIn, {}, void 0, false, {\n                                        fileName: \"C:\\\\Users\\\\Ephraim\\\\Favorites\\\\Authentic_Seller\\\\client\\\\pages\\\\about.js\",\n                                        lineNumber: 79,\n                                        columnNumber: 17\n                                    }, undefined)\n                                }, void 0, false, {\n                                    fileName: \"C:\\\\Users\\\\Ephraim\\\\Favorites\\\\Authentic_Seller\\\\client\\\\pages\\\\about.js\",\n                                    lineNumber: 77,\n                                    columnNumber: 15\n                                }, undefined),\n                                /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"a\", {\n                                    className: \"ml-3 text-white text-xl hover:scale-125 ease-in-out duration-300\",\n                                    children: /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(Mailto, {\n                                        email: \"ephraimmomoh54@gmail.com\",\n                                        subject: \"Hello & Welcome\",\n                                        body: \"Do you have any Questions for Me ?\",\n                                        children: \"✉️\"\n                                    }, void 0, false, {\n                                        fileName: \"C:\\\\Users\\\\Ephraim\\\\Favorites\\\\Authentic_Seller\\\\client\\\\pages\\\\about.js\",\n                                        lineNumber: 82,\n                                        columnNumber: 15\n                                    }, undefined)\n                                }, void 0, false, {\n                                    fileName: \"C:\\\\Users\\\\Ephraim\\\\Favorites\\\\Authentic_Seller\\\\client\\\\pages\\\\about.js\",\n                                    lineNumber: 81,\n                                    columnNumber: 15\n                                }, undefined)\n                            ]\n                        }, void 0, true, {\n                            fileName: \"C:\\\\Users\\\\Ephraim\\\\Favorites\\\\Authentic_Seller\\\\client\\\\pages\\\\about.js\",\n                            lineNumber: 69,\n                            columnNumber: 9\n                        }, undefined),\n                        /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"div\", {}, void 0, false, {\n                            fileName: \"C:\\\\Users\\\\Ephraim\\\\Favorites\\\\Authentic_Seller\\\\client\\\\pages\\\\about.js\",\n                            lineNumber: 88,\n                            columnNumber: 14\n                        }, undefined)\n                    ]\n                }, void 0, true, {\n                    fileName: \"C:\\\\Users\\\\Ephraim\\\\Favorites\\\\Authentic_Seller\\\\client\\\\pages\\\\about.js\",\n                    lineNumber: 32,\n                    columnNumber: 6\n                }, undefined)\n            }, void 0, false, {\n                fileName: \"C:\\\\Users\\\\Ephraim\\\\Favorites\\\\Authentic_Seller\\\\client\\\\pages\\\\about.js\",\n                lineNumber: 31,\n                columnNumber: 5\n            }, undefined),\n            /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"div\", {\n                className: \"about_image\",\n                children: /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"img\", {\n                    src: \"/images/Learn.gif\"\n                }, void 0, false, {\n                    fileName: \"C:\\\\Users\\\\Ephraim\\\\Favorites\\\\Authentic_Seller\\\\client\\\\pages\\\\about.js\",\n                    lineNumber: 95,\n                    columnNumber: 5\n                }, undefined)\n            }, void 0, false, {\n                fileName: \"C:\\\\Users\\\\Ephraim\\\\Favorites\\\\Authentic_Seller\\\\client\\\\pages\\\\about.js\",\n                lineNumber: 94,\n                columnNumber: 5\n            }, undefined)\n        ]\n    }, void 0, true);\n};\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (About);\n//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,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QUcsRUFBQyxtQkFBbUI7Ozs7OzZCQUFFOzs7Ozt5QkFFekI7O29CQUNILENBQ0o7QUFDSCxDQUFDO0FBRUQsaUVBQWUzQixLQUFLLEVBQUMiLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly9jbGllbnQvLi9wYWdlcy9hYm91dC5qcz8wYzQwIl0sInNvdXJjZXNDb250ZW50IjpbImltcG9ydCBSZWFjdCBmcm9tICdyZWFjdCdcclxuaW1wb3J0IHsgRmFUd2l0dGVyLCBGYUxpbmtlZGluSW4gfSBmcm9tIFwicmVhY3QtaWNvbnMvZmFcIjtcclxuaW1wb3J0IHsgQmFkZ2UsIFNwYWNlLCBTd2l0Y2ggfSBmcm9tICdhbnRkJztcclxuXHJcblxyXG5jb25zdCBBYm91dD0gKCkgPT4ge1xyXG4gIGNvbnN0IE1haWx0byA9ICh7IGVtYWlsLCBzdWJqZWN0ID0gJycsIGJvZHkgPSAnJywgY2hpbGRyZW4gfSkgPT4ge1xyXG4gICAgbGV0IHBhcmFtcyA9IHN1YmplY3QgfHwgYm9keSA/ICc/JyA6ICcnO1xyXG4gICAgaWYgKHN1YmplY3QpIHBhcmFtcyArPSBgc3ViamVjdD0ke2VuY29kZVVSSUNvbXBvbmVudChzdWJqZWN0KX1gO1xyXG4gICAgaWYgKGJvZHkpIHBhcmFtcyArPSBgJHtzdWJqZWN0ID8gJyYnIDogJyd9Ym9keT0ke2VuY29kZVVSSUNvbXBvbmVudChib2R5KX1gO1xyXG4gIFxyXG4gICAgcmV0dXJuIDxhIGhyZWY9e2BtYWlsdG86JHtlbWFpbH0ke3BhcmFtc31gfT57Y2hpbGRyZW59PC9hPjtcclxuICB9O1xyXG5cclxuICBjb25zdCBbc2hvdywgc2V0U2hvd10gPSBSZWFjdC51c2VTdGF0ZSh0cnVlKTtcclxuICBSZWFjdC51c2VFZmZlY3QoKCkgPT4ge1xyXG4gICAgZG9jdW1lbnQuZG9jdW1lbnRFbGVtZW50LnNjcm9sbFRvcCA9IGRvY3VtZW50LmRvY3VtZW50RWxlbWVudC5jbGllbnRIZWlnaHQ7XHJcbiAgICBkb2N1bWVudC5kb2N1bWVudEVsZW1lbnQuc2Nyb2xsTGVmdCA9IGRvY3VtZW50LmRvY3VtZW50RWxlbWVudC5jbGllbnRXaWR0aDtcclxuICB9LCBbXSk7XHJcblxyXG4gIDxTcGFjZVxyXG4gICAgZGlyZWN0aW9uPVwidmVydGljYWxcIlxyXG4gICAgc2l6ZT1cIm1pZGRsZVwiXHJcbiAgICBzdHlsZT17e1xyXG4gICAgICB3aWR0aDogJzEwMCUnLFxyXG4gICAgfX1cclxuICAvPlxyXG4gIHJldHVybiAoXHJcbiAgICA8PlxyXG4gICBcclxuICAgIDxkaXYgY2xhc3NOYW1lPSdkZXZlbG9wZXJfQWJvdXRDb250ZW50Jz5cclxuICAgICA8ZGl2IGNsYXNzTmFtZT0nZGV2ZWxvcGVyQ29udCc+XHJcbiAgICAgIDxpbWcgc3JjPScvaW1hZ2VzL2RldmVsb3Blci5qcGcnIGNsYXNzTmFtZT0nZGV2ZWxvcGVyTWFpbicvPlxyXG4gICAgICBcclxuICAgICAgXHJcbiAgICAgIDxoMz5cclxuICAgICAgPGRpdj5cclxuICAgICAgICBcclxuICAgICAgXHJcbiAgICA8L2Rpdj5cclxuICAgIPCflpDvuI8gSEkgVEhFUkUuIPCfmI4gSSdtICBFcGhyYWltIE1vbW9oIEpyLCBhIHNvZnR3YXJlIGRldmVsb3BlciBiYXNlZCBpbiBNb25yb3ZpYSwgTGliZXJpYSB3aXRoIGRlY2FkZXMgb2YgZXhwZXJpZW5jZXMgd29ya2luZyB3aXRoIG1vZGVybiB0ZWNob2xvZ2llcyxcclxuICAgICAgIE15IHVsdGltYXRlIGdvYWwgaXMgdG8gc2hhcmUga25vd2xlZGdlcyBhbmQgaW1wYWN0cyB0aGUgd29ybGQgdXNpbmcgbXkgZXhwZXJpZW5jZXMgYW5kIGV4cGVydGlzZS5cclxuICAgICAgIEJ1dCBJJ20gIGFsc28gb3BlbiB0byBjb252ZXJzYXRpb25zIGFyb3VuZCBFbnRyZXByZW51ZXJzaGlwLCBTb2NpYWwgaW1wYWN0IGluaXRpYXRpdmVzLCBEaXZlcnNpdHkgYW5kIGluY2x1c2lvbi5cclxuICAgICAgICBcclxuICAgICAgPHNwYW4gc3R5bGU9e3sgZGlzcGxheTonZmxleCcsIGZsZXhEaXJlY3Rpb246XCJjb2x1bW5cIiwganVzdGlmeUNvbnRlbnQ6XCJzcGFjZS1iZXR3ZWVuXCJ9fT5cclxuICAgICA8c3BhbiBzdHlsZT17eyBkaXNwbGF5OidmbGV4JyxmbGV4RGlyZWN0aW9uOlwiY29sdW1uXCIsIGZsZXhXcmFwOid3cmFwJ319PlxyXG4gICAgIDxTcGFjZT5cclxuICAgICAgPFN3aXRjaCBjaGVja2VkPXtzaG93fSBvbkNoYW5nZT17KCkgPT4gc2V0U2hvdyghc2hvdyl9IC8+XHJcbiAgICAgIDxCYWRnZSBjb3VudD17c2hvdyA/IFwiUkVBQ1QgSlMgfHwgSkFWQSBcIiA6IFwiTk9ERSBKU1wifSBzaG93WmVybyBjb2xvcj1cImdyZWVuXCIgLz5cclxuICAgICAgPEJhZGdlIGNvdW50PXtzaG93ID8gXCJDKytcIiA6IFwiTkVYVCBKU1wifSAvPlxyXG4gICAgICA8QmFkZ2VcclxuICAgICAgICBjbGFzc05hbWU9XCJzaXRlLWJhZGdlLWNvdW50LTEwOVwiXHJcbiAgICAgICAgY291bnQ9e3Nob3cgPyBcIkhUTUwgQ1NTIEpBVkFTQ1JJUFRcIiA6IFwiTXlTUUx8fCBTUUxcIn1cclxuICAgICAgICBzdHlsZT17e1xyXG4gICAgICAgICAgYmFja2dyb3VuZENvbG9yOiAnUFVSUExFJyxcclxuICAgICAgICB9fVxyXG4gICAgICAvPlxyXG4gICAgPC9TcGFjZT5cclxuICAgICAgIFxyXG4gICAgIDwvc3Bhbj5cclxuICAgICAgXHJcbiAgICAgIDwvc3Bhbj5cclxuICAgICAgIFxyXG4gICAgICA8L2gzPlxyXG4gICAgICA8ZGl2PlxyXG4gICAgICAgIDxCYWRnZS5SaWJib24gdGV4dD1cIkNhbGw6ICsyMzEgODg4MjE0NTIxXCIgY29sb3I9XCJibHVlXCI+PC9CYWRnZS5SaWJib24+XHJcblxyXG4gICAgICAgIDwvZGl2PlxyXG4gICAgICAgIDxzcGFuIGNsYXNzTmFtZT0nc29jaWFsTGlua3MgaW5saW5lLWZsZXggbGc6bWwtYXV0byBsZzptdC0wIG10LTYgdy1mdWxsIGp1c3RpZnktY2VudGVyIG1kOmp1c3RpZnktZW5kIG1kOnctYXV0byc+XHJcbiAgICAgICAgICAgICBcclxuICAgICAgICAgICAgICA8YSBocmVmPSdodHRwczovL3R3aXR0ZXIuY29tL21vbW9oX2VwaHJhaW0/dD1hZ3R6VGpTQ3g3Qi1LRHhqUUlqc1RRJnM9MDknICB0YXJnZXQ9J19ibGFuaydcclxuICAgICAgICAgICAgICAgIHJlbD0nbm9vcGVuZXIgbm9yZWZlcnJlcicgY2xhc3NOYW1lPSdtbC0zIHRleHQtd2hpdGUgdGV4dC14bCAgaG92ZXI6c2NhbGUtMTI1IGVhc2UtaW4tb3V0IGR1cmF0aW9uLTMwMCc+XHJcbiAgICAgICAgICAgICAgICA8RmFUd2l0dGVyIC8+XHJcbiAgICAgICAgICAgICAgPC9hPlxyXG4gICAgICAgICAgICAgXHJcblxyXG4gICAgICAgICAgICAgIDxhIGhyZWY9J2h0dHBzOi8vd3d3LmxpbmtlZGluLmNvbS9pbi9lcGhyYWltLW1vbW9oLWpyLTYyOWIwMjI2NycgIHRhcmdldD0nX2JsYW5rJ1xyXG4gICAgICAgICAgICAgICAgcmVsPSdub29wZW5lciBub3JlZmVycmVyJ2NsYXNzTmFtZT0nbWwtMyB0ZXh0LXdoaXRlIHRleHQteGwgIGhvdmVyOnNjYWxlLTEyNSBlYXNlLWluLW91dCBkdXJhdGlvbi0zMDAnPlxyXG4gICAgICAgICAgICAgICAgPEZhTGlua2VkaW5JbiAvPlxyXG4gICAgICAgICAgICAgIDwvYT5cclxuICAgICAgICAgICAgICA8YSBjbGFzc05hbWU9J21sLTMgdGV4dC13aGl0ZSB0ZXh0LXhsICBob3ZlcjpzY2FsZS0xMjUgZWFzZS1pbi1vdXQgZHVyYXRpb24tMzAwJz5cclxuICAgICAgICAgICAgICA8TWFpbHRvIGVtYWlsPVwiZXBocmFpbW1vbW9oNTRAZ21haWwuY29tXCIgc3ViamVjdD1cIkhlbGxvICYgV2VsY29tZVwiIGJvZHk9XCJEbyB5b3UgaGF2ZSBhbnkgUXVlc3Rpb25zIGZvciBNZSA/XCI+XHJcbiAgICAgICAgICAgICAg4pyJ77iPXHJcbiAgICAgICAgICAgICA8L01haWx0bz5cclxuICAgICAgICAgICAgICA8L2E+XHJcbiAgICAgICAgICAgICBcclxuICAgICAgICAgICAgPC9zcGFuPlxyXG4gICAgICAgICAgICAgPGRpdj5cclxuICAgICAgICAgICAgICAgIFxyXG5cclxuICAgICAgICAgICAgIDwvZGl2PlxyXG4gICAgIDwvZGl2PlxyXG4gICAgPC9kaXY+XHJcbiAgICA8ZGl2IGNsYXNzTmFtZT0nYWJvdXRfaW1hZ2UnPlxyXG4gICAgPGltZyAgc3JjPVwiL2ltYWdlcy9MZWFybi5naWZcIi8+XHJcblxyXG4gICAgPC9kaXY+XHJcbiAgICA8Lz5cclxuICApXHJcbn1cclxuXHJcbmV4cG9ydCBkZWZhdWx0IEFib3V0OyJdLCJuYW1lcyI6WyJSZWFjdCIsIkZhVHdpdHRlciIsIkZhTGlua2VkaW5JbiIsIkJhZGdlIiwiU3BhY2UiLCJTd2l0Y2giLCJBYm91dCIsIk1haWx0byIsImVtYWlsIiwic3ViamVjdCIsImJvZHkiLCJjaGlsZHJlbiIsInBhcmFtcyIsImVuY29kZVVSSUNvbXBvbmVudCIsImEiLCJocmVmIiwic2hvdyIsInNldFNob3ciLCJ1c2VTdGF0ZSIsInVzZUVmZmVjdCIsImRvY3VtZW50IiwiZG9jdW1lbnRFbGVtZW50Iiwic2Nyb2xsVG9wIiwiY2xpZW50SGVpZ2h0Iiwic2Nyb2xsTGVmdCIsImNsaWVudFdpZHRoIiwiZGlyZWN0aW9uIiwic2l6ZSIsInN0eWxlIiwid2lkdGgiLCJkaXYiLCJjbGFzc05hbWUiLCJpbWciLCJzcmMiLCJoMyIsInNwYW4iLCJkaXNwbGF5IiwiZmxleERpcmVjdGlvbiIsImp1c3RpZnlDb250ZW50IiwiZmxleFdyYXAiLCJjaGVja2VkIiwib25DaGFuZ2UiLCJjb3VudCIsInNob3daZXJvIiwiY29sb3IiLCJiYWNrZ3JvdW5kQ29sb3IiLCJSaWJib24iLCJ0ZXh0IiwidGFyZ2V0IiwicmVsIl0sInNvdXJjZVJvb3QiOiIifQ==\n//# sourceURL=webpack-internal:///./pages/about.js\n");
 
 /***/ }),
 
-/***/ 87066:
-/***/ ((module) => {
-
-module.exports = require("@ant-design/icons");
-
-/***/ }),
-
-/***/ 45725:
+/***/ "antd":
+/*!***********************!*\
+  !*** external "antd" ***!
+  \***********************/
 /***/ ((module) => {
 
 module.exports = require("antd");
 
 /***/ }),
 
-/***/ 16689:
+/***/ "react":
+/*!************************!*\
+  !*** external "react" ***!
+  \************************/
 /***/ ((module) => {
 
 module.exports = require("react");
 
 /***/ }),
 
-/***/ 16290:
+/***/ "react-icons/fa":
+/*!*********************************!*\
+  !*** external "react-icons/fa" ***!
+  \*********************************/
 /***/ ((module) => {
 
 module.exports = require("react-icons/fa");
 
 /***/ }),
 
-/***/ 92750:
+/***/ "react/jsx-dev-runtime":
+/*!****************************************!*\
+  !*** external "react/jsx-dev-runtime" ***!
+  \****************************************/
 /***/ ((module) => {
 
-module.exports = require("react-icons/fi");
-
-/***/ }),
-
-/***/ 20997:
-/***/ ((module) => {
-
-module.exports = require("react/jsx-runtime");
+module.exports = require("react/jsx-dev-runtime");
 
 /***/ })
 
@@ -216,7 +70,7 @@ module.exports = require("react/jsx-runtime");
 var __webpack_require__ = require("../webpack-runtime.js");
 __webpack_require__.C(exports);
 var __webpack_exec__ = (moduleId) => (__webpack_require__(__webpack_require__.s = moduleId))
-var __webpack_exports__ = (__webpack_exec__(50414));
+var __webpack_exports__ = (__webpack_exec__("./pages/about.js"));
 module.exports = __webpack_exports__;
 
 })();

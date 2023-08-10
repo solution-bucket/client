@@ -1,7 +1,7 @@
 import SubscriberLayout from '../../components/layout/SubscriberLayout';
 import { useContext, useEffect, useState } from "react";
 import axios from "axios";
-import { Avatar,Tooltip,Carousel, Button  } from "antd";
+import {Tooltip,Carousel, Button  } from "antd";
 import Link from "next/link";
 import { SyncOutlined, PlayCircleOutlined, UserAddOutlined } from "@ant-design/icons";
 import { AuthContext } from '../../context/auth';
@@ -10,20 +10,13 @@ function Subscriber () {
     const [courses, setCourses] = useState([]);
     const [loading, setLoading] = useState(false);
     const [auth, setAuth] = useContext(AuthContext);
-
+     const {user} = auth;
     const contentStyle1 = {
       height: '160px',
       color: '#fff',
       lineHeight: '160px',
       textAlign: 'center',
       background: '#364d79',
-    };
-    const contentStyle2 = {
-      height: '160px',
-      color: '#fff',
-      lineHeight: '160px',
-      textAlign: 'center',
-      background: 'orange',
     };
 
     useEffect(()=> {
@@ -46,7 +39,7 @@ function Subscriber () {
                 <SubscriberLayout>
               <div style={{marginTop:'80px'}}>
                    <h1>🖐️ Hello <UserAddOutlined/>{' '} {auth?.user?.name}</h1>
-                   {courses.length === 0 ? (
+                   {user?.courses?.length === 0 ? (
                     <>
                    <h3 style={{color:'orange'}}>There is no course for you now</h3>
                     <Carousel autoplay>
@@ -63,9 +56,6 @@ function Subscriber () {
                 </Link>
                         </h3>
                       </div>
-                      {/* <div>
-                        <h3 style={contentStyle2}>2</h3>
-                      </div> */}
    
                      </Carousel>
                     </>
@@ -82,17 +72,12 @@ function Subscriber () {
                 ): courses && courses.map((course)=> (
                   
                   <Link
-                  href={`/subscriber/course/${course.slug}`}
+                  href={`/subscriber/course/${course?.slug}`}
                   className="pointer"
                 >
                   <Tooltip title={`${course?.name}`}>
                     
                     <div key={course._id} >
-                  {/* <Avatar
-                  size={40}
-                  shape="square"
-                  src={course.image ? course.image.Location : "/course.png"}
-                /> */}
                 <img style={{width:'80px', height:'40px', borderRadius:'5px',objectFit:'cover'}} src="/images/laptop-computer.jpg" alt='course image'/>
                  <div className="col">
                   <Link

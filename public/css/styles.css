@@ -444,7 +444,7 @@ color: rgb(182, 179, 10);
 }
 @media screen and (max-width: 375px) {
   .FullWidthImage img{
-    width: 880px;
+    width: 700px;
   }
 }
 @media screen and (max-width: 768px) {
@@ -505,20 +505,21 @@ color: rgb(182, 179, 10);
     height: 120px;
     border-radius: 50%;
     margin-right:-140%;
-    box-shadow: 10px 10px 10px 11px rgba(4,3,0,0.3);
+    /* box-shadow: 10px 10px 10px 11px rgba(4,3,0,0.3); */
 
   }
   .developerCont {
-    width: 90%;
+    width: 100%;
     padding: 10px;
     margin:  auto 10px 20px;
-    height: 480px;
+    height: 520px;
     background-color: #fff;
     border-radius: 3%;
     box-shadow: 20px 10px 10px 51px rgba(2,0,0,0.3);
 
   }
   .about_image img {
+    margin-top: 70px;
     width: 430px; 
    }
    .socialLinks {
